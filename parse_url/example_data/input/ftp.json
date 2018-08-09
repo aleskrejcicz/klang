@@ -2,6 +2,6 @@
   "ftp://host.xz/path/to/repo.git",
   "ftp://user:password@server:22/path;type=typecode",
   "ftp://ftp.bogus.com/~some/path/to/a/file.txt",
-  "ftp://Asdadas.com/asd/@fgh/?ka=va&kb=vb#aa",
+  "ftp://sdadas.com/asd/@fgh/?ka=va&kb=vb#aa",
   "ftp://foo.bar/baz"
 ]
