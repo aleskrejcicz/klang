@@ -1,0 +1,552 @@
+{
+    "git@github.com:aleskrejcicz/mplayer_callapi_example.git": {
+        "path": "git@github.com:aleskrejcicz/mplayer_callapi_example.git"
+    },
+    "ssh://git@bitbucket.org/aleskrejcicz/aleskrejci.cz.git": {
+
+    },
+    "http://\u263a.damowmow.com/": {
+        "scheme": "http",
+        "host": "\u263a.damowmow.com",
+        "path": "/"
+    },
+    "h://test": {
+        "scheme": "h",
+        "host": "test"
+    },
+    "http:/test": {
+        "scheme": "http",
+        "path": "/test"
+    },
+    "http:///tril-lomitka.com/rovna/se/zbytek/a-vyhod-error": false,
+    "http://user:pass@host.com:8080/p/a/t/h?query=string#hash": {
+        "scheme": "http",
+        "host": "host.com",
+        "port": 8080,
+        "user": "user",
+        "pass": "pass",
+        "path": "/p/a/t/h",
+        "query": "query=string",
+        "fragment": "hash"
+    },
+    "https://alice@atlanta.com": {
+        "scheme": "https",
+        "host": "atlanta.com",
+        "user": "alice"
+    },
+    "http://mt0.google.com/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s=": {
+        "scheme": "http",
+        "host": "mt0.google.com",
+        "path": "/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s="
+    },
+    "http://x.com/path?that's#all": {
+        "scheme": "http",
+        "host": "x.com",
+        "path": "/path",
+        "query": "that's",
+        "fragment": "all"
+    },
+    "https://www.secured.com:443/resource.html?id=6e8bc430-9c3a-11d9-9669-0800200c9a66#some-header": {
+        "scheme": "https",
+        "host": "www.secured.com",
+        "port": 443,
+        "path": "/resource.html",
+        "query": "id=6e8bc430-9c3a-11d9-9669-0800200c9a66",
+        "fragment": "some-header"
+    },
+    "ftp://ftp.bogus.com/~some/path/to/a/file.txt": {
+        "scheme": "ftp",
+        "host": "ftp.bogus.com",
+        "path": "/~some/path/to/a/file.txt"
+    },
+    "http://foo:bar@w1.superman.com/very/long/path.html?p1=v1&p2=v2#more-details": {
+        "scheme": "http",
+        "host": "w1.superman.com",
+        "user": "foo",
+        "pass": "bar",
+        "path": "/very/long/path.html",
+        "query": "p1=v1&p2=v2",
+        "fragment": "more-details"
+    },
+    "git@github.com:aleskrejcicz/scriptus.git": {
+        "path": "git@github.com:aleskrejcicz/scriptus.git"
+    },
+    "https://github.com/aleskrejcicz/scriptus.git": {
+        "scheme": "https",
+        "host": "github.com",
+        "path": "/aleskrejcicz/scriptus.git"
+    },
+    "foo.com": {
+        "path": "foo.com"
+    },
+    "rdar://1234": {
+        "scheme": "rdar",
+        "host": "1234"
+    },
+    "http://shouldfail.com": {
+        "scheme": "http",
+        "host": "shouldfail.com"
+    },
+    "http://foo.bar/foo(bar)baz quux": {
+        "scheme": "http",
+        "host": "foo.bar",
+        "path": "/foo(bar)baz quux"
+    },
+    "ftps://foo.bar/": {
+        "scheme": "ftps",
+        "host": "foo.bar",
+        "path": "/"
+    },
+    "http://-error-.invalid/": {
+        "scheme": "http",
+        "host": "-error-.invalid",
+        "path": "/"
+    },
+    "http://a.b--c.de/": {
+        "scheme": "http",
+        "host": "a.b--c.de",
+        "path": "/"
+    },
+    "http://-a.b.co": {
+        "scheme": "http",
+        "host": "-a.b.co"
+    },
+    "http://a.b-.co": {
+        "scheme": "http",
+        "host": "a.b-.co"
+    },
+    "http://0.0.0.0": {
+        "scheme": "http",
+        "host": "0.0.0.0"
+    },
+    "http://10.1.1.0": {
+        "scheme": "http",
+        "host": "10.1.1.0"
+    },
+    "http://10.1.1.255": {
+        "scheme": "http",
+        "host": "10.1.1.255"
+    },
+    "http://224.1.1.1": {
+        "scheme": "http",
+        "host": "224.1.1.1"
+    },
+    "http://1.1.1.1.1": {
+        "scheme": "http",
+        "host": "1.1.1.1.1"
+    },
+    "http://123.123.123": {
+        "scheme": "http",
+        "host": "123.123.123"
+    },
+    "http://3628126748": {
+        "scheme": "http",
+        "host": "3628126748"
+    },
+    "http://.www.foo.bar/": {
+        "scheme": "http",
+        "host": ".www.foo.bar",
+        "path": "/"
+    },
+    "http://www.foo.bar./": {
+        "scheme": "http",
+        "host": "www.foo.bar.",
+        "path": "/"
+    },
+    "http://.www.foo.bar./": {
+        "scheme": "http",
+        "host": ".www.foo.bar.",
+        "path": "/"
+    },
+    "http://10.1.1.1": {
+        "scheme": "http",
+        "host": "10.1.1.1"
+    },
+    "http://\u272adf.ws/123": {
+        "scheme": "http",
+        "host": "\u272adf.ws",
+        "path": "/123"
+    },
+    "http://userid:password@example.com:8080": {
+        "scheme": "http",
+        "host": "example.com",
+        "port": 8080,
+        "user": "userid",
+        "pass": "password"
+    },
+    "http://userid:password@example.com:8080/": {
+        "scheme": "http",
+        "host": "example.com",
+        "port": 8080,
+        "user": "userid",
+        "pass": "password",
+        "path": "/"
+    },
+    "http://userid@example.com": {
+        "scheme": "http",
+        "host": "example.com",
+        "user": "userid"
+    },
+    "http://userid@example.com/": {
+        "scheme": "http",
+        "host": "example.com",
+        "user": "userid",
+        "path": "/"
+    },
+    "http://userid@example.com:8080": {
+        "scheme": "http",
+        "host": "example.com",
+        "port": 8080,
+        "user": "userid"
+    },
+    "http://userid@example.com:8080/": {
+        "scheme": "http",
+        "host": "example.com",
+        "port": 8080,
+        "user": "userid",
+        "path": "/"
+    },
+    "http://userid:password@example.com": {
+        "scheme": "http",
+        "host": "example.com",
+        "user": "userid",
+        "pass": "password"
+    },
+    "http://userid:password@example.com/": {
+        "scheme": "http",
+        "host": "example.com",
+        "user": "userid",
+        "pass": "password",
+        "path": "/"
+    },
+    "http://142.42.1.1/": {
+        "scheme": "http",
+        "host": "142.42.1.1",
+        "path": "/"
+    },
+    "http://142.42.1.1:8080/": {
+        "scheme": "http",
+        "host": "142.42.1.1",
+        "port": 8080,
+        "path": "/"
+    },
+    "http://\u27a1.ws/\u4a39": {
+        "scheme": "http",
+        "host": "\u27a1.ws",
+        "path": "/\u4a39"
+    },
+    "http://\u2318.ws": {
+        "scheme": "http",
+        "host": "\u2318.ws"
+    },
+    "http://\u2318.ws/": {
+        "scheme": "http",
+        "host": "\u2318.ws",
+        "path": "/"
+    },
+    "http://foo.com/blah_(wikipedia)#cite-1": {
+        "scheme": "http",
+        "host": "foo.com",
+        "path": "/blah_(wikipedia)",
+        "fragment": "cite-1"
+    },
+    "http://foo.com/blah_(wikipedia)_blah#cite-1": {
+        "scheme": "http",
+        "host": "foo.com",
+        "path": "/blah_(wikipedia)_blah",
+        "fragment": "cite-1"
+    },
+    "http://foo.com/unicode_(\u272a)_in_parens": {
+        "scheme": "http",
+        "host": "foo.com",
+        "path": "/unicode_(\u272a)_in_parens"
+    },
+    "http://foo.com/(something)?after=parens": {
+        "scheme": "http",
+        "host": "foo.com",
+        "path": "/(something)",
+        "query": "after=parens"
+    },
+    "http://code.google.com/events/#&product=browser": {
+        "scheme": "http",
+        "host": "code.google.com",
+        "path": "/events/",
+        "fragment": "&product=browser"
+    },
+    "http://j.mp": {
+        "scheme": "http",
+        "host": "j.mp"
+    },
+    "ftp://foo.bar/baz": {
+        "scheme": "ftp",
+        "host": "foo.bar",
+        "path": "/baz"
+    },
+    "http://foo.bar/?q=Test%20URL-encoded%20stuff": {
+        "scheme": "http",
+        "host": "foo.bar",
+        "path": "/",
+        "query": "q=Test%20URL-encoded%20stuff"
+    },
+    "http://\u0645\u062b\u0627\u0644.\u0625\u062e\u062a\u0628\u0627\u0631": {
+        "scheme": "http",
+        "host": "\u0645\u062b\u0627\u0644.\u0625\u062e\u062a\u0628\u0627\u0631"
+    },
+    "http://\u4f8b\u5b50.\u6d4b\u8bd5": {
+        "scheme": "http",
+        "host": "\u4f8b\u5b50.\u6d4b\u8bd5"
+    },
+    "http://www26.w3.org:8080/Icons/timbl/ramp3.draw/?M=D": {
+        "scheme": "http",
+        "host": "www26.w3.org",
+        "port": 8080,
+        "path": "/Icons/timbl/ramp3.draw/",
+        "query": "M=D"
+    },
+    "http://197.168.0.6": {
+        "scheme": "http",
+        "host": "197.168.0.6"
+    },
+    "https://github.com/IonicaBizau/node-git-url-parse.git": {
+        "scheme": "https",
+        "host": "github.com",
+        "path": "/IonicaBizau/node-git-url-parse.git"
+    },
+    "git://github.com/aleskrejcicz/scriptus": {
+        "scheme": "git",
+        "host": "github.com",
+        "path": "/aleskrejcicz/scriptus"
+    },
+    "ssh://user@host.xz:port/path/to/repo.git/": false,
+    "ssh://user@host.COM/path/to/repo.git/": {
+        "scheme": "ssh",
+        "host": "host.COM",
+        "user": "user",
+        "path": "/path/to/repo.git/"
+    },
+    "ssh://host.xz:port/path/to/repo.git/": false,
+    "ssh://host.cz/path/to/repo.git/": {
+        "scheme": "ssh",
+        "host": "host.cz",
+        "path": "/path/to/repo.git/"
+    },
+    "ssh://user@host.xz/path/to/repo.git/": {
+        "scheme": "ssh",
+        "host": "host.xz",
+        "user": "user",
+        "path": "/path/to/repo.git/"
+    },
+    "ssh://host.xz/path/to/repo.git/": {
+        "scheme": "ssh",
+        "host": "host.xz",
+        "path": "/path/to/repo.git/"
+    },
+    "ssh://user@host.xz/~user/path/to/repo.git/": {
+        "scheme": "ssh",
+        "host": "host.xz",
+        "user": "user",
+        "path": "/~user/path/to/repo.git/"
+    },
+    "ssh://host.xz/~user/path/to/repo.git/": {
+        "scheme": "ssh",
+        "host": "host.xz",
+        "path": "/~user/path/to/repo.git/"
+    },
+    "ssh://user@host.xz/~/path/to/repo.git": {
+        "scheme": "ssh",
+        "host": "host.xz",
+        "user": "user",
+        "path": "/~/path/to/repo.git"
+    },
+    "ssh://host.xz/~/path/to/repo.git": {
+        "scheme": "ssh",
+        "host": "host.xz",
+        "path": "/~/path/to/repo.git"
+    },
+    "user@host.xz:/path/to/repo.git/": {
+        "path": "user@host.xz:/path/to/repo.git/"
+    },
+    "host.xz:/path/to/repo.git/": {
+        "scheme": "host.xz",
+        "path": "/path/to/repo.git/"
+    },
+    "ftp://host.xz/path/to/repo.git": {
+        "scheme": "ftp",
+        "host": "host.xz",
+        "path": "/path/to/repo.git"
+    },
+    "user@host.xz:~user/path/to/repo.git/": {
+        "path": "user@host.xz:~user/path/to/repo.git/"
+    },
+    "host.xz:~user/path/to/repo.git/": {
+        "scheme": "host.xz",
+        "path": "~user/path/to/repo.git/"
+    },
+    "user@host.xz:path/to/repo.git": {
+        "path": "user@host.xz:path/to/repo.git"
+    },
+    "host.xz:path/to/repo.git": {
+        "scheme": "host.xz",
+        "path": "path/to/repo.git"
+    },
+    "rsync://host.xz/path/to/repo.git/": {
+        "scheme": "rsync",
+        "host": "host.xz",
+        "path": "/path/to/repo.git/"
+    },
+    "git://host.xz/path/to/repo.git/": {
+        "scheme": "git",
+        "host": "host.xz",
+        "path": "/path/to/repo.git/"
+    },
+    "git://host.xz/~user/path/to/repo.git/": {
+        "scheme": "git",
+        "host": "host.xz",
+        "path": "/~user/path/to/repo.git/"
+    },
+    "http://host.xz/path/to/repo.git/": {
+        "scheme": "http",
+        "host": "host.xz",
+        "path": "/path/to/repo.git/"
+    },
+    "https://host.xz/path/to/repo.git/": {
+        "scheme": "https",
+        "host": "host.xz",
+        "path": "/path/to/repo.git/"
+    },
+    "/path/to/repo.git/": {
+        "path": "/path/to/repo.git/"
+    },
+    "path/to/repo.git/": {
+        "path": "path/to/repo.git/"
+    },
+    "~/path/to/repo.git": {
+        "path": "~/path/to/repo.git"
+    },
+    "file:///path/to/repo.git/": {
+        "scheme": "file",
+        "path": "/path/to/repo.git/"
+    },
+    "file://~/path/to/repo.git/": {
+        "scheme": "file",
+        "host": "~",
+        "path": "/path/to/repo.git/"
+    },
+    "ssh://xxx@host.xz:999/path/to/repo.git/": {
+        "scheme": "ssh",
+        "host": "host.xz",
+        "port": 999,
+        "user": "xxx",
+        "path": "/path/to/repo.git/"
+    },
+    "git://host.xz:999/path/to/repo.git/": {
+        "scheme": "git",
+        "host": "host.xz",
+        "port": 999,
+        "path": "/path/to/repo.git/"
+    },
+    "https://host.xz:999/path/to/repo.git/": {
+        "scheme": "https",
+        "host": "host.xz",
+        "port": 999,
+        "path": "/path/to/repo.git/"
+    },
+    "ftps://host.xz:999/path/to/repo.git/": {
+        "scheme": "ftps",
+        "host": "host.xz",
+        "port": 999,
+        "path": "/path/to/repo.git/"
+    },
+    "http://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "http",
+        "host": "asd.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "https://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "https",
+        "host": "asd.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "ftp://Asdadas.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "ftp",
+        "host": "Asdadas.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "ftps://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "ftps",
+        "host": "asd.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "file://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "file",
+        "host": "asd.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "mailto://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "mailto",
+        "host": "asd.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "htts://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "htts",
+        "host": "asd.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "htps://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+        "scheme": "htps",
+        "host": "asd.com",
+        "path": "/asd/@fgh/",
+        "query": "ka=va&kb=vb",
+        "fragment": "aa"
+    },
+    "telnet://yourLinuxBox:23": {
+        "scheme": "telnet",
+        "host": "yourLinuxBox",
+        "port": 23
+    },
+    "nntp://dior.ics.muni.cz/cz": {
+        "scheme": "nntp",
+        "host": "dior.ics.muni.cz",
+        "path": "/cz"
+    },
+    "http://server:4/path#fragment": {
+        "scheme": "http",
+        "host": "server",
+        "port": 4,
+        "path": "/path",
+        "fragment": "fragment"
+    },
+    "http://server:55/path?search": {
+        "scheme": "http",
+        "host": "server",
+        "port": 55,
+        "path": "/path",
+        "query": "search"
+    },
+    "ftp://user:password@server:22/path;type=typecode": {
+        "scheme": "ftp",
+        "host": "server",
+        "port": 22,
+        "user": "user",
+        "pass": "password",
+        "path": "/path;type=typecode"
+    },
+    "mailto:name@email.com": {
+        "scheme": "mailto",
+        "path": "name@email.com"
+    }
+}
