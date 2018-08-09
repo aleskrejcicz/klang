@@ -1,38 +1,38 @@
 {
-  "https://www.secured.com:443/resource.html?id=6e8bc430-9c3a-11d9-9669-0800200c9a66#some-header": {
-    "port": 443,
-    "fragment": "some-header",
-    "password": null,
-    "username": null,
-    "path": "/resource.html",
-    "params": "",
+  "https://alice@atlanta.com": {
+    "path": "",
     "scheme": "https",
-    "query": "id=6e8bc430-9c3a-11d9-9669-0800200c9a66",
-    "hostname": "www.secured.com",
-    "netloc": "www.secured.com:443"
+    "hostname": "atlanta.com",
+    "username": "alice",
+    "fragment": "",
+    "params": "",
+    "password": null,
+    "query": "",
+    "netloc": "alice@atlanta.com",
+    "port": null
   },
   "https://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
-    "port": null,
-    "fragment": "aa",
-    "password": null,
-    "username": null,
     "path": "/asd/@fgh/",
-    "params": "",
     "scheme": "https",
-    "query": "ka=va&kb=vb",
     "hostname": "asd.com",
-    "netloc": "asd.com"
-  },
-  "https://alice@atlanta.com": {
-    "port": null,
-    "fragment": "",
-    "password": null,
-    "username": "alice",
-    "path": "",
+    "username": null,
+    "fragment": "aa",
     "params": "",
+    "password": null,
+    "query": "ka=va&kb=vb",
+    "netloc": "asd.com",
+    "port": null
+  },
+  "https://www.secured.com:443/resource.html?id=6e8bc430-9c3a-11d9-9669-0800200c9a66#some-header": {
+    "path": "/resource.html",
     "scheme": "https",
-    "query": "",
-    "hostname": "atlanta.com",
-    "netloc": "alice@atlanta.com"
+    "hostname": "www.secured.com",
+    "username": null,
+    "fragment": "some-header",
+    "params": "",
+    "password": null,
+    "query": "id=6e8bc430-9c3a-11d9-9669-0800200c9a66",
+    "netloc": "www.secured.com:443",
+    "port": 443
   }
 }
