@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 
 
 root_dir = 'example_data'
-filename = 'url.http.json'
+file_list = ['url.http.json']
 
 
 def extract(root_dir, filename):
@@ -36,5 +36,6 @@ def save(root_dir, filename, parsed_data):
         f.write(json.dumps(parsed_data))
 
 
-parsed_data = extract(root_dir, filename)
-save(root_dir, filename, parsed_data)
+for filename in file_list:
+    parsed_data = extract(root_dir, filename)
+    save(root_dir, filename, parsed_data)
