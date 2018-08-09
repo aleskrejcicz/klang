@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 
 
 root_dir = 'example_data'
-file_list = ['url.http.json']
+file_list = ['http.json', 'https.json']
 
 
 def extract_data(root_dir, filename):

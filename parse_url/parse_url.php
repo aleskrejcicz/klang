@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 $rootDir = 'example_data';
-$fileArray = ['url.http.json'];
+$fileArray = ['http.json'];
 
 
 function extractData($rootDir, $filename)
