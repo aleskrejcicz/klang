@@ -90,14 +90,3 @@ def parse_url(url: str):
         elif re.match(r'^(nntp)$', scheme_word):
             return c.nntp(url)
     return
-
-
-ahoj = []
-with open('example_data/input/url.http.json') as data_file:
-    urls = json.load(data_file)
-    for url in urls.keys():
-        ahoj.append(url)
-
-
-with open('example_data/output/python/url.http.json', 'a') as data_file:
-    data_file.write(json.dumps(ahoj))
