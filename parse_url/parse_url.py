@@ -32,10 +32,11 @@ def extract(root_dir, filename):
 
 
 def save(root_dir, filename, parsed_data):
+    json_data = json.dumps(parsed_data)
     with open('%s/output/python/%s' % (root_dir, filename), 'w') as f:
-        f.write(json.dumps(parsed_data))
+        f.write(json_data)
 
 
-for filename in file_list:
-    parsed_data = extract(root_dir, filename)
-    save(root_dir, filename, parsed_data)
+for f in file_list:
+    parsed_data = extract(root_dir, f)
+    save(root_dir, f, parsed_data)
