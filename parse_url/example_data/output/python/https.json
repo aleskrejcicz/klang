@@ -1,1 +1,38 @@
-{}
+{
+  "https://www.secured.com:443/resource.html?id=6e8bc430-9c3a-11d9-9669-0800200c9a66#some-header": {
+    "port": 443,
+    "fragment": "some-header",
+    "password": null,
+    "username": null,
+    "path": "/resource.html",
+    "params": "",
+    "scheme": "https",
+    "query": "id=6e8bc430-9c3a-11d9-9669-0800200c9a66",
+    "hostname": "www.secured.com",
+    "netloc": "www.secured.com:443"
+  },
+  "https://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+    "port": null,
+    "fragment": "aa",
+    "password": null,
+    "username": null,
+    "path": "/asd/@fgh/",
+    "params": "",
+    "scheme": "https",
+    "query": "ka=va&kb=vb",
+    "hostname": "asd.com",
+    "netloc": "asd.com"
+  },
+  "https://alice@atlanta.com": {
+    "port": null,
+    "fragment": "",
+    "password": null,
+    "username": "alice",
+    "path": "",
+    "params": "",
+    "scheme": "https",
+    "query": "",
+    "hostname": "atlanta.com",
+    "netloc": "alice@atlanta.com"
+  }
+}
