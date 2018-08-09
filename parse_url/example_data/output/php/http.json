@@ -2,7 +2,7 @@
     "user@host.xz:/path/to/repo.git/": {
         "path": "user@host.xz:/path/to/repo.git/"
     },
-    "http://.www.foo.bar/": {
+    "http://www.foo.bar/": {
         "scheme": "http",
         "host": ".www.foo.bar",
         "path": "/"

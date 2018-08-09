@@ -1,0 +1,14 @@
+[
+  "ssh://host.xz/path/to/repo.git/",
+  "ssh://user@host.xz/path/to/repo.git/",
+  "ssh://user@host.xz/~/path/to/repo.git",
+  "ssh://host.xz/~user/path/to/repo.git/",
+  "ssh://user@host.xz/~user/path/to/repo.git/",
+  "ssh://git@bitbucket.org/aleskrejcicz/aleskrejci.cz.git",
+  "ssh://xxx@host.xz:999/path/to/repo.git/",
+  "ssh://host.cz/path/to/repo.git/",
+  "ssh://user@host.COM/path/to/repo.git/",
+  "ssh://user@host.xz:port/path/to/repo.git/",
+  "ssh://host.xz/~/path/to/repo.git",
+  "ssh://host.xz:port/path/to/repo.git/"
+]
