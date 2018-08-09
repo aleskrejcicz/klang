@@ -47,23 +47,23 @@ from urllib.parse import urlparse
 from urllib.parse import urlsplit
 
 
-url = 'https://user:pass@NetLoc.com:80/path;parxxam?query=argument#fragment'
-parsed = urlparse(url)
-print('scheme  :', parsed.scheme)
-print('netloc  :', parsed.netloc)
-print('path    :', parsed.path)
-print('params  :', parsed.params)
-print('query   :', parsed.query)
-print('fragment:', parsed.fragment)
-print('username:', parsed.username)
-print('password:', parsed.password)
-print('hostname:', parsed.hostname)
-print('port    :', parsed.port)
-print("---------------")
-
-parsed = urlsplit(url)
-print(parsed)
-
+# url = 'https://user:pass@NetLoc.com:80/path;parxxam?query=argument#fragment'
+# parsed = urlparse(url)
+# print('scheme  :', parsed.scheme)
+# print('netloc  :', parsed.netloc)
+# print('path    :', parsed.path)
+# print('params  :', parsed.params)
+# print('query   :', parsed.query)
+# print('fragment:', parsed.fragment)
+# print('username:', parsed.username)
+# print('password:', parsed.password)
+# print('hostname:', parsed.hostname)
+# print('port    :', parsed.port)
+# print("---------------")
+#
+# parsed = urlsplit(url)
+# print(parsed)
+#
 
 def parse_url(url: str):
     c = Parse()
@@ -92,11 +92,12 @@ def parse_url(url: str):
     return
 
 
-with open('php/php_urls.json') as data_file:
+ahoj = []
+with open('example_data/input/url.http.json') as data_file:
     urls = json.load(data_file)
     for url in urls.keys():
-        parse_url(url)
-        print("========")
+        ahoj.append(url)
 
-    # https://www.npmjs.com/package/git-url-parse
-    # https://golang.org/src/net/url/url_test.go
+
+with open('example_data/output/python/url.http.json', 'a') as data_file:
+    data_file.write(json.dumps(ahoj))
