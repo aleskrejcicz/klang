@@ -6,7 +6,7 @@ root_dir = 'example_data'
 file_list = ['url.http.json']
 
 
-def extract(root_dir, filename):
+def extract_data(root_dir, filename):
     parsed_data = {}
     with open('%s/input/%s' % (root_dir, filename)) as f:
         for url in json.loads(f.read()):
@@ -31,12 +31,12 @@ def extract(root_dir, filename):
     return parsed_data
 
 
-def save(root_dir, filename, parsed_data):
+def save_to_file(root_dir, filename, parsed_data):
     json_data = json.dumps(parsed_data)
     with open('%s/output/python/%s' % (root_dir, filename), 'w') as f:
         f.write(json_data)
 
 
 for f in file_list:
-    parsed_data = extract(root_dir, f)
-    save(root_dir, f, parsed_data)
+    parsed_data = extract_data(root_dir, f)
+    save_to_file(root_dir, f, parsed_data)
