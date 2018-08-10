@@ -44,7 +44,7 @@
     "isRfc3986": null
   },
   {
-    "url": "http://-a.b.co",
+    "url": "http://a.b.co",
     "isRfc3986": null
   },
   {
@@ -53,10 +53,6 @@
   },
   {
     "url": "http://142.42.1.1/",
-    "isRfc3986": null
-  },
-  {
-    "url": "http://10.1.1.0",
     "isRfc3986": null
   },
   {
@@ -117,14 +113,6 @@
   },
   {
     "url": "http://foo.com/(something)?after=parens",
-    "isRfc3986": null
-  },
-  {
-    "url": "http://1.1.1.1.1",
-    "isRfc3986": null
-  },
-  {
-    "url": "http://123.123.123",
     "isRfc3986": null
   },
   {

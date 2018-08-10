@@ -9,24 +9,26 @@ output_dir = '%s/output/python' % root_dir
 
 
 def ext_data(fwp):
-    parsed_data = {}
+    data = {}
     with open(fwp) as f:
         for url_data in json.loads(f.read()):
             url = url_data['url']
             parsed = urlparse(url)
-            parsed_data[url] = {
-                'scheme': parsed.scheme,
-                'netloc': parsed.netloc,
-                'path': parsed.path,
-                'params': parsed.params,
-                'query': parsed.query,
-                'fragment': parsed.fragment,
-                'username': parsed.username,
-                'password': parsed.password,
-                'hostname': parsed.hostname,
-                'port': parsed.port
+            data[url] = {
+                'data': {
+                    'scheme': parsed.scheme,
+                    'netloc': parsed.netloc,
+                    'path': parsed.path,
+                    'params': parsed.params,
+                    'query': parsed.query,
+                    'fragment': parsed.fragment,
+                    'username': parsed.username,
+                    'password': parsed.password,
+                    'hostname': parsed.hostname,
+                    'port': parsed.port
+                }
             }
-    return parsed_data
+    return data
 
 
 def save_to_file(fwp, parsed_data):
