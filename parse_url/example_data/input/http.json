@@ -1,38 +1,146 @@
 [
-  "http://www.foo.bar/",
-  "http://userid@example.com:8080/",
-  "http://foo:bar@w1.superman.com/very/long/path.html?p1=v1&p2=v2#more-details",
-  "http://userid@example.com",
-  "http://foo.com/blah_(wikipedia)#cite-1",
-  "http://a.b.co",
-  "http://userid:password@example.com",
-  "http://foo.bar/?q=Test%20URL-encoded%20stuff",
-  "http://userid:password@example.com/",
-  "http://server:55/path?search",
-  "http://10.1.1.255",
-  "http://-a.b.co",
-  "http://asd.com/asd/@fgh/?ka=va&kb=vb#aa",
-  "http://142.42.1.1/",
-  "http://10.1.1.0",
-  "http://mt0.google.com/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s=",
-  "http://224.1.1.1",
-  "http://x.com/path?that's#all",
-  "http://user:pass@host.com:8080/p/a/t/h?query=string#hash",
-  "http://shouldfail.com",
-  "http:///tril-lomitka.com/rovna/se/zbytek/a-vyhod-error",
-  "http://a.b--c.de/",
-  "http://3628126748",
-  "http://10.1.1.1",
-  "http://0.0.0.0",
-  "http://userid:password@example.com:8080/",
-  "http://code.google.com/events/#&product=browser",
-  "http://userid:password@example.com:8080",
-  "http://userid@example.com:8080",
-  "http://foo.com/(something)?after=parens",
-  "http://1.1.1.1.1",
-  "http://123.123.123",
-  "http://foo.com/blah_(wikipedia)_blah#cite-1",
-  "http://server:4/path#fragment",
-  "http://www26.w3.org:8080/Icons/timbl/ramp3.draw/?M=D",
-  "http://foo.bar/foo(bar)baz quux"
+  {
+    "url": "http://www.foo.bar/",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://userid@example.com:8080/",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://foo:bar@w1.superman.com/very/long/path.html?p1=v1&p2=v2#more-details",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://userid@example.com",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://foo.com/blah_(wikipedia)#cite-1",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://a.b.co",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://userid:password@example.com",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://foo.bar/?q=Test%20URL-encoded%20stuff",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://userid:password@example.com/",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://server:55/path?search",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://10.1.1.255",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://-a.b.co",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://asd.com/asd/@fgh/?ka=va&kb=vb#aa",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://142.42.1.1/",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://10.1.1.0",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://mt0.google.com/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s=",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://224.1.1.1",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://x.com/path?that's#all",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://user:pass@host.com:8080/p/a/t/h?query=string#hash",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://shouldfail.com",
+    "isRfc3986": null
+  },
+  {
+    "url": "http:///tril-lomitka.com/rovna/se/zbytek/a-vyhod-error",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://a.b--c.de/",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://3628126748",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://10.1.1.1",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://0.0.0.0",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://userid:password@example.com:8080/",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://code.google.com/events/#&product=browser",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://userid:password@example.com:8080",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://userid@example.com:8080",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://foo.com/(something)?after=parens",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://1.1.1.1.1",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://123.123.123",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://foo.com/blah_(wikipedia)_blah#cite-1",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://server:4/path#fragment",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://www26.w3.org:8080/Icons/timbl/ramp3.draw/?M=D",
+    "isRfc3986": null
+  },
+  {
+    "url": "http://foo.bar/foo(bar)baz quux",
+    "isRfc3986": null
+  }
 ]

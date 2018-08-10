@@ -70,6 +70,13 @@ def parse_url(url: str):
     scheme_position = url.find(':')
     print(url, scheme_position)
     if scheme_position > 0:
+        # 7. Application layer:
+        # https://en.wikipedia.org/wiki/Application_layer
+        # -----------------
+        # Services:
+        # BitTorrent • DNS • BOOTP
+        # DHCP • FTP • HTTP • HTTPS • IMAP • IRC • Ident • NNTP • NFS • NTP • POP3
+        # RTP • SIP • SMB • SMTP • SNMP • SSH • STUN • Telnet • XMPP
         scheme_word = url[:scheme_position]
         if re.match(r'^(http|https)$', scheme_word):
             return c.http_and_https(url)

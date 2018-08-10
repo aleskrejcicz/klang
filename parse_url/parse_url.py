@@ -1,21 +1,19 @@
+import os
 import json
 from urllib.parse import urlparse
 
 
 root_dir = 'example_data'
-file_list = ['http.json', 'https.json']
+input_dir = '%s/input' % root_dir
+output_dir = '%s/output/python' % root_dir
 
 
-def extract_data(root_dir, filename):
+def ext_data(fwp):
     parsed_data = {}
-    with open('%s/input/%s' % (root_dir, filename)) as f:
-        for url in json.loads(f.read()):
+    with open(fwp) as f:
+        for url_data in json.loads(f.read()):
+            url = url_data['url']
             parsed = urlparse(url)
-            try:
-                port = parsed.port
-            except Exception as e:
-                port = None
-
             parsed_data[url] = {
                 'scheme': parsed.scheme,
                 'netloc': parsed.netloc,
@@ -26,17 +24,18 @@ def extract_data(root_dir, filename):
                 'username': parsed.username,
                 'password': parsed.password,
                 'hostname': parsed.hostname,
-                'port': port
+                'port': parsed.port
             }
     return parsed_data
 
 
-def save_to_file(root_dir, filename, parsed_data):
+def save_to_file(fwp, parsed_data):
     json_data = json.dumps(parsed_data)
-    with open('%s/output/python/%s' % (root_dir, filename), 'w') as f:
+    with open(fwp, 'w') as f:
         f.write(json_data)
 
 
-for f in file_list:
-    parsed_data = extract_data(root_dir, f)
-    save_to_file(root_dir, f, parsed_data)
+for f in ['http.json', 'https.json']:
+    fwp_input = '%s/%s' % (input_dir, f)
+    fwp_output = '%s/%s' % (output_dir, f)
+    save_to_file(fwp_output, ext_data(fwp_input))
