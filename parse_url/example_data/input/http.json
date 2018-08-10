@@ -23,8 +23,6 @@
   "http://userid@example.com:8080",
   "http://197.168.0.6",
   "http://foo.com/(something)?after=parens",
-  "http://j.mp",
-  "http://www.foo.bar./",
   "http://host.xz/path/to/repo.git/",
   "http://foo.com/blah_(wikipedia)_blah#cite-1",
   "http://server:4/path#fragment",
