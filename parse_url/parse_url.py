@@ -11,8 +11,7 @@ output_dir = '%s/output/python' % root_dir
 def ext_data(fwp):
     data = {}
     with open(fwp) as f:
-        for url_data in json.loads(f.read()):
-            url = url_data['url']
+        for url in json.loads(f.read()):
             parsed = urlparse(url)
             data[url] = {
                 'data': {
