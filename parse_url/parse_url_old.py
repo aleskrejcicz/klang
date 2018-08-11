@@ -3,67 +3,33 @@ import re
 
 
 class Parse:
-    def __init__(self):
-        self.url_pattern = {
-            'scheme': None,
-            'user': None,
-            'pass': None,
-            'host': None,
-            'port': None,
-            'path': None,
-            'query': None,
-            'fragment': None
-        }
-
     def http_and_https(self, data):
-        return self.url_pattern
+        return None
 
     def ftp_and_ftps(self, data):
-        return self.url_pattern
+        return None
 
     def ssh(self, data):
-        return self.url_pattern
+        return None
 
     def git(self, data):
-        return self.url_pattern
+        return None
 
     def file(self, data):
-        return self.url_pattern
+        return None
 
     def rsync(self, data):
-        return self.url_pattern
+        return None
 
     def mailto(self, data):
-        return self.url_pattern
+        return None
 
     def telnet(self, data):
-        return self.url_pattern
+        return None
 
     def nntp(self, data):
-        return self.url_pattern
+        return None
 
-
-from urllib.parse import urlparse
-from urllib.parse import urlsplit
-
-
-# url = 'https://user:pass@NetLoc.com:80/path;parxxam?query=argument#fragment'
-# parsed = urlparse(url)
-# print('scheme  :', parsed.scheme)
-# print('netloc  :', parsed.netloc)
-# print('path    :', parsed.path)
-# print('params  :', parsed.params)
-# print('query   :', parsed.query)
-# print('fragment:', parsed.fragment)
-# print('username:', parsed.username)
-# print('password:', parsed.password)
-# print('hostname:', parsed.hostname)
-# print('port    :', parsed.port)
-# print("---------------")
-#
-# parsed = urlsplit(url)
-# print(parsed)
-#
 
 def parse_url(url: str):
     c = Parse()
