@@ -1,1 +1,268 @@
-{"http://foo:bar@w1.superman.com/very/long/path.html?p1=v1&p2=v2#more-details": {"data": {"params": "", "path": "/very/long/path.html", "fragment": "more-details", "scheme": "http", "netloc": "foo:bar@w1.superman.com", "port": null, "query": "p1=v1&p2=v2", "username": "foo", "hostname": "w1.superman.com", "password": "bar"}}, "http://server:4/path#fragment": {"data": {"params": "", "path": "/path", "fragment": "fragment", "scheme": "http", "netloc": "server:4", "port": 4, "query": "", "username": null, "hostname": "server", "password": null}}, "http://197.168.0.6": {"data": {"params": "", "path": "", "fragment": "", "scheme": "http", "netloc": "197.168.0.6", "port": null, "query": "", "username": null, "hostname": "197.168.0.6", "password": null}}, "http://userid:password@example.com:88": {"data": {"params": "", "path": "", "fragment": "", "scheme": "http", "netloc": "userid:password@example.com:88", "port": 88, "query": "", "username": "userid", "hostname": "example.com", "password": "password"}}, "http://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {"data": {"params": "", "path": "/asd/@fgh/", "fragment": "aa", "scheme": "http", "netloc": "asd.com", "port": null, "query": "ka=va&kb=vb", "username": null, "hostname": "asd.com", "password": null}}, "http://foo.com/blah_(wikipedia)#cite-1": {"data": {"params": "", "path": "/blah_(wikipedia)", "fragment": "cite-1", "scheme": "http", "netloc": "foo.com", "port": null, "query": "", "username": null, "hostname": "foo.com", "password": null}}, "http://code.google.com/events/#&product=browser": {"data": {"params": "", "path": "/events/", "fragment": "&product=browser", "scheme": "http", "netloc": "code.google.com", "port": null, "query": "", "username": null, "hostname": "code.google.com", "password": null}}, "http://userid@example.com:8080/": {"data": {"params": "", "path": "/", "fragment": "", "scheme": "http", "netloc": "userid@example.com:8080", "port": 8080, "query": "", "username": "userid", "hostname": "example.com", "password": null}}, "http://host.xz/path/to/repo.git/": {"data": {"params": "", "path": "/path/to/repo.git/", "fragment": "", "scheme": "http", "netloc": "host.xz", "port": null, "query": "", "username": null, "hostname": "host.xz", "password": null}}, "http://x.com/path?that's#all": {"data": {"params": "", "path": "/path", "fragment": "all", "scheme": "http", "netloc": "x.com", "port": null, "query": "that's", "username": null, "hostname": "x.com", "password": null}}, "http://foo.org/?q=Test%20URL-encoded%20stuff": {"data": {"params": "", "path": "/", "fragment": "", "scheme": "http", "netloc": "foo.org", "port": null, "query": "q=Test%20URL-encoded%20stuff", "username": null, "hostname": "foo.org", "password": null}}, "http://user:pass@host.com:8080/p/a/t/h?query=string#hash": {"data": {"params": "", "path": "/p/a/t/h", "fragment": "hash", "scheme": "http", "netloc": "user:pass@host.com:8080", "port": 8080, "query": "query=string", "username": "user", "hostname": "host.com", "password": "pass"}}, "http://mt0.google.com/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s=": {"data": {"params": "", "path": "/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s=", "fragment": "", "scheme": "http", "netloc": "mt0.google.com", "port": null, "query": "", "username": null, "hostname": "mt0.google.com", "password": null}}, "http://server:55/path?search": {"data": {"params": "", "path": "/path", "fragment": "", "scheme": "http", "netloc": "server:55", "port": 55, "query": "search", "username": null, "hostname": "server", "password": null}}, "http://foo.com/(something)?after=parens": {"data": {"params": "", "path": "/(something)", "fragment": "", "scheme": "http", "netloc": "foo.com", "port": null, "query": "after=parens", "username": null, "hostname": "foo.com", "password": null}}, "http://www26.w3.org:8080/Icons/timbl/ramp3.draw/?M=D": {"data": {"params": "", "path": "/Icons/timbl/ramp3.draw/", "fragment": "", "scheme": "http", "netloc": "www26.w3.org:8080", "port": 8080, "query": "M=D", "username": null, "hostname": "www26.w3.org", "password": null}}, "http://foo.com/blah_(wikipedia)_blah#cite-1": {"data": {"params": "", "path": "/blah_(wikipedia)_blah", "fragment": "cite-1", "scheme": "http", "netloc": "foo.com", "port": null, "query": "", "username": null, "hostname": "foo.com", "password": null}}, "http://shouldfail.com": {"data": {"params": "", "path": "", "fragment": "", "scheme": "http", "netloc": "shouldfail.com", "port": null, "query": "", "username": null, "hostname": "shouldfail.com", "password": null}}, "http://142.42.1.1:8080/": {"data": {"params": "", "path": "/", "fragment": "", "scheme": "http", "netloc": "142.42.1.1:8080", "port": 8080, "query": "", "username": null, "hostname": "142.42.1.1", "password": null}}}
+{
+  "http://foo.org/?q=Test%20URL-encoded%20stuff": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "foo.org",
+      "fragment": "",
+      "username": null,
+      "path": "/",
+      "netloc": "foo.org",
+      "query": "q=Test%20URL-encoded%20stuff",
+      "scheme": "http"
+    }
+  },
+  "http://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "asd.com",
+      "fragment": "aa",
+      "username": null,
+      "path": "/asd/@fgh/",
+      "netloc": "asd.com",
+      "query": "ka=va&kb=vb",
+      "scheme": "http"
+    }
+  },
+  "http://mt0.google.com/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s=": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "mt0.google.com",
+      "fragment": "",
+      "username": null,
+      "path": "/vt/lyrs=m@114&hl=en&src=api&x=2&y=2&z=3&s=",
+      "netloc": "mt0.google.com",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://foo.com/blah_(wikipedia)#cite-1": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "foo.com",
+      "fragment": "cite-1",
+      "username": null,
+      "path": "/blah_(wikipedia)",
+      "netloc": "foo.com",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://www26.w3.org:8080/Icons/timbl/ramp3.draw/?M=D": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": 8080,
+      "hostname": "www26.w3.org",
+      "fragment": "",
+      "username": null,
+      "path": "/Icons/timbl/ramp3.draw/",
+      "netloc": "www26.w3.org:8080",
+      "query": "M=D",
+      "scheme": "http"
+    }
+  },
+  "http://userid:password@example.com:88": {
+    "data": {
+      "password": "password",
+      "params": "",
+      "port": 88,
+      "hostname": "example.com",
+      "fragment": "",
+      "username": "userid",
+      "path": "",
+      "netloc": "userid:password@example.com:88",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://host.xz/path/to/repo.git/": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "host.xz",
+      "fragment": "",
+      "username": null,
+      "path": "/path/to/repo.git/",
+      "netloc": "host.xz",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://server:55/path?search": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": 55,
+      "hostname": "server",
+      "fragment": "",
+      "username": null,
+      "path": "/path",
+      "netloc": "server:55",
+      "query": "search",
+      "scheme": "http"
+    }
+  },
+  "http://userid@example.com:8080/": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": 8080,
+      "hostname": "example.com",
+      "fragment": "",
+      "username": "userid",
+      "path": "/",
+      "netloc": "userid@example.com:8080",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://user:pass@host.com:8080/p/a/t/h?query=string#hash": {
+    "data": {
+      "password": "pass",
+      "params": "",
+      "port": 8080,
+      "hostname": "host.com",
+      "fragment": "hash",
+      "username": "user",
+      "path": "/p/a/t/h",
+      "netloc": "user:pass@host.com:8080",
+      "query": "query=string",
+      "scheme": "http"
+    }
+  },
+  "http://server:4/path#fragment": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": 4,
+      "hostname": "server",
+      "fragment": "fragment",
+      "username": null,
+      "path": "/path",
+      "netloc": "server:4",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://x.com/path?that's#all": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "x.com",
+      "fragment": "all",
+      "username": null,
+      "path": "/path",
+      "netloc": "x.com",
+      "query": "that's",
+      "scheme": "http"
+    }
+  },
+  "http://foo:bar@w1.superman.com/very/long/path.html?p1=v1&p2=v2#more-details": {
+    "data": {
+      "password": "bar",
+      "params": "",
+      "port": null,
+      "hostname": "w1.superman.com",
+      "fragment": "more-details",
+      "username": "foo",
+      "path": "/very/long/path.html",
+      "netloc": "foo:bar@w1.superman.com",
+      "query": "p1=v1&p2=v2",
+      "scheme": "http"
+    }
+  },
+  "http://foo.com/blah_(wikipedia)_blah#cite-1": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "foo.com",
+      "fragment": "cite-1",
+      "username": null,
+      "path": "/blah_(wikipedia)_blah",
+      "netloc": "foo.com",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://142.42.1.1:8080/": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": 8080,
+      "hostname": "142.42.1.1",
+      "fragment": "",
+      "username": null,
+      "path": "/",
+      "netloc": "142.42.1.1:8080",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://197.168.0.6": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "197.168.0.6",
+      "fragment": "",
+      "username": null,
+      "path": "",
+      "netloc": "197.168.0.6",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://shouldfail.com": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "shouldfail.com",
+      "fragment": "",
+      "username": null,
+      "path": "",
+      "netloc": "shouldfail.com",
+      "query": "",
+      "scheme": "http"
+    }
+  },
+  "http://foo.com/(something)?after=parens": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "foo.com",
+      "fragment": "",
+      "username": null,
+      "path": "/(something)",
+      "netloc": "foo.com",
+      "query": "after=parens",
+      "scheme": "http"
+    }
+  },
+  "http://code.google.com/events/#&product=browser": {
+    "data": {
+      "password": null,
+      "params": "",
+      "port": null,
+      "hostname": "code.google.com",
+      "fragment": "&product=browser",
+      "username": null,
+      "path": "/events/",
+      "netloc": "code.google.com",
+      "query": "",
+      "scheme": "http"
+    }
+  }
+}
