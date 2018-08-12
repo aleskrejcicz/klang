@@ -72,8 +72,11 @@ if __name__ == '__main__':
         fwp_input = '%s/%s' % (input_dir, f)
         fwp_output = '%s/%s' % (output_dir, f)
 
-        data = {}
+        dict_data = {}
         for url in json_load(fwp_input):
-            data[url] = {'data': parse_url(url)}
+            parse_data = parse_url(url)
+            if not parse_data:
+                raise Exception(url)
+            dict_data[url] = {'data': parse_data}
 
-        save_to_file(fwp_output, data)
+        save_to_file(fwp_output, dict_data)

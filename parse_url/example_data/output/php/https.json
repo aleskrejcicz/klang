@@ -1,22 +1,22 @@
 {
-    "https://alice@atlanta.com": {
-        "scheme": "https",
-        "host": "atlanta.com",
-        "user": "alice"
-    },
-    "https://www.secured.com:443/resource.html?id=6e8bc430-9c3a-11d9-9669-0800200c9a66#some-header": {
-        "scheme": "https",
-        "host": "www.secured.com",
-        "port": 443,
-        "path": "/resource.html",
-        "query": "id=6e8bc430-9c3a-11d9-9669-0800200c9a66",
-        "fragment": "some-header"
-    },
-    "https://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
-        "scheme": "https",
-        "host": "asd.com",
-        "path": "/asd/@fgh/",
-        "query": "ka=va&kb=vb",
-        "fragment": "aa"
-    }
+  "https://alice@atlanta.com": {
+    "scheme": "https",
+    "host": "atlanta.com",
+    "user": "alice"
+  },
+  "https://www.secured.com:443/resource.html?id=6e8bc430-9c3a-11d9-9669-0800200c9a66#some-header": {
+    "scheme": "https",
+    "host": "www.secured.com",
+    "port": 443,
+    "path": "/resource.html",
+    "query": "id=6e8bc430-9c3a-11d9-9669-0800200c9a66",
+    "fragment": "some-header"
+  },
+  "https://asd.com/asd/@fgh/?ka=va&kb=vb#aa": {
+    "scheme": "https",
+    "host": "asd.com",
+    "path": "/asd/@fgh/",
+    "query": "ka=va&kb=vb",
+    "fragment": "aa"
+  }
 }
