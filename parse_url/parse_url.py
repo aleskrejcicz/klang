@@ -62,14 +62,18 @@ def save_to_file(fwp, parsed_data):
         f.write(json_data)
 
 
+def json_load(fwp):
+    with open(fwp) as f:
+        return json.loads(f.read())
+
+
 if __name__ == '__main__':
     for f in ['http.json', 'https.json']:
         fwp_input = '%s/%s' % (input_dir, f)
         fwp_output = '%s/%s' % (output_dir, f)
 
         data = {}
-        with open(fwp_input) as f:
-            for url in json.loads(f.read()):
-                data[url] = {'data': parse_url(url)}
+        for url in json_load(fwp_input):
+            data[url] = {'data': parse_url(url)}
 
         save_to_file(fwp_output, data)
