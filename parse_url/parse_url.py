@@ -1,4 +1,5 @@
 import re
+import os
 import json
 from urllib.parse import urlparse
 
@@ -68,14 +69,14 @@ def json_load(fwp):
 
 
 if __name__ == '__main__':
-    for f in ['http.json', 'https.json']:
+    for f in os.listdir(input_dir):
         fwp_input = '%s/%s' % (input_dir, f)
         fwp_output = '%s/%s' % (output_dir, f)
 
         dict_data = {}
         for url in json_load(fwp_input):
             parse_data = parse_url(url)
-            if not parse_data:
+            if parse_data is None:
                 raise Exception(url)
             dict_data[url] = {'data': parse_data}
 
