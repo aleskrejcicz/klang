@@ -9,7 +9,7 @@ function extractData($rootDir, $filename)
     $parsedData = [];
     $f = file_get_contents(sprintf("%s/input/%s", $rootDir, $filename));
     foreach (json_decode($f) as $url) {
-        $parsedData[$url] = parse_url($url);
+        $parsedData[$url] = array('data' => parse_url($url));
     }
     return $parsedData;
 }
