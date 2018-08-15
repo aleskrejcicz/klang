@@ -69,6 +69,11 @@ def json_load(fwp):
 
 
 if __name__ == '__main__':
+    '''
+    *.git 100%
+    ssh://git@* 100%
+    git@* 100%
+    '''
     for f in os.listdir(input_dir):
         fwp_input = '%s/%s' % (input_dir, f)
         fwp_output = '%s/%s' % (output_dir, f)
